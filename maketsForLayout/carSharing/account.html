@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .container {
+                @apply mx-auto w-[80%] h-[100vh];
+            }
+            .brdr {
+                @apply border-2 border-black;
+            }
+            .brdr-b {
+                @apply border-b-2 border-black;
+            }
+            header {
+                @apply brdr-b flex justify-between items-end pt-7 pb-4 px-5;
+            }
+            main {
+                @apply flex flex-col items-center;
+            }
+            .button {
+                @apply bg-black text-white text-center py-3 text-xl;
+            }
+            .info {
+                @apply brdr space-y-10 p-3 w-[200px];
+            }
+        }
+    </style>
+    <title>Account</title>
+</head>
+<body>
+    <div class="container brdr">
+        <header>
+            <img src="./images/LOGO.svg" alt="">
+            <div class="space-x-6">
+                <a href="">Акции</a>
+                <a href="./search.html">Поиск</a>
+                <a href="./Sing_up.html">Регистрация</a>
+                <a href="./account.html">Личный кабинет</a>
+            </div>
+        </header>
+        <main>
+            <h1 class="text-4xl mt-28">ЛИЧНЫЙ КАБИНЕТ</h1>
+            <div>
+                <h1 class="text-4xl text-center mt-28">Иванов Иван</h1>
+                <div class="flex mt-5 space-x-[-2px]">
+                    <div class="info">
+                        <div><p>Количество бонусных баллов</p></div>
+                        <div><b>120</b></div>
+                    </div>
+                    <div class="info">
+                        <div><p>Количество бронирований</p></div>
+                        <div><b>12</b></div>                        
+                    </div>
+                    <button class="button w-[200px]">выйти</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply flex flex-col mx-52 my-16;
+}
+
+body {
+    @apply bg-black text-white font-sans;
+}
+
+.row {
+    @apply flex flex-row;
+}
+
+.login {
+    @apply text-lg text-[grey] hover:text-[#3C82F4];
+}
+
+.singup {
+    @apply bg-[#306EF7] rounded-2xl;
+}
+
+.button{
+    @apply px-10 px-6 py-4 text-center;
+}
+
+.input {
+    @apply placeholder:text-white bg-black text-xl w-96 outline-none;
+}
+
+.input_border {
+    @apply border-b border-[grey] py-4;
+}

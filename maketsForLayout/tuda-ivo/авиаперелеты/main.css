@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto/Roboto-Regular.ttf") format("trutype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bg-blue {
+    background-color: #93EBFF;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #93EBFF;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+
+    justify-content: space-evenly;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    margin: 0;
+    color: #316D97;
+}
+
+h1 {
+    text-decoration: none;
+    color: #316D97;
+
+    font-size: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #316D97;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+
+    margin-bottom:70px ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 128px;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    background-color: #F8600A;
+    border-radius: 10px ;
+    border: none;
+
+    padding: 17px;
+
+    color: white;
+    font-size: 18px;
+
+    margin: auto;
+    margin-top: 30px;
+}
+
+.input-form {
+    border: 2px solid #33A9FF;
+    border-radius: 15px;
+
+    width: 218px;
+
+    color: grey;
+    font-size: 18px;
+    padding: 17px;
+}

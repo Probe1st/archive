@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .container {
+                @apply mx-auto w-[80%] h-[100%];
+            }
+            .container-elements{
+                @apply mx-auto  w-[100%] h-[100%];
+            }
+            .brdr {
+                @apply border-2 border-black;
+            }
+            .brdr-b {
+                @apply border-b-2 border-black;
+            }
+            header {
+                @apply brdr-b flex justify-between items-end pt-10 pb-4 px-5;
+            }
+            footer{
+                @apply brdr flex justify-between items-end mt-10 pt-7 pb-4 px-5;
+            }
+            main {
+                @apply flex flex-col items-center;
+            }
+            .info {
+                @apply brdr space-y-10 p-3 w-[200px];
+            }
+            .inputs {
+                @apply outline-0 brdr h-[44px] placeholder:text-xl;
+            }
+            .inputs-div {
+                @apply flex flex-col text-xl w-[25%];
+            }
+            .inputs-div-sub{
+                @apply flex flex-col text-xl w-[100%];
+            }
+            .button {
+                @apply bg-black text-white text-center py-3 text-xl;
+            }
+            .button-sub{
+                @apply bg-[#637BE4] text-white text-center py-3 text-xl;
+            }
+            .space-div{
+                @apply space-y-5;
+            }
+            .place{
+                @apply w-[42px] h-[97px] bg-[grey] hover:bg-[green] rounded-xl;
+            }
+            .place-div {
+                @apply flex flex-row py-4 px-10;
+            }
+            .space-div{
+                @apply space-y-5;
+            }
+            .chase-data{
+                @apply brdr border-r-0 w-[384px] text-lg;
+            }
+            .chase-bottom{
+                @apply p-3 flex flex-col space-y-10;
+            }
+            .card{
+                @apply brdr w-[46%];
+            }
+            .card-img {
+                @apply w-[100%];
+            }
+            .card-suscribe {
+                @apply border w-[46%];
+            }
+        }
+    </style>
+    <title>Main</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <button type="button" onclick="handler('index')"><img id="logo" src="./images/LOGO.svg" alt=""></button>
+
+            <div class="space-x-6">
+                <a href="#stock" onclick="stockhandler()">Акции</a>
+                <button type="button" onclick="handler('search')">Поиск</button>
+                <button type="button" onclick="handler('sign-up')">Регистрация</button>
+                <button type="button" onclick="handler('account')">Личный кабинет</button>
+            </div>
+        </header>
+
+        <div class="container-elements" id="index">
+            <main>
+                <div class="flex flex-row mt-[-2px]">
+                    <div class="w-[50%] flex flex-col justify-between">
+                        <h1 class="text-7xl mt-10 w-[83%]">Владей поездкой, а не автомобилем!</h1>
+                        <p class="text-xl text-[grey] w-[80%]">Выбреите количество бонусов и какой автомобиль хотите
+                            забронировать и узнайте стоимость бронирования</p>
+                        <div class="flex mb-3">
+                            <div class="w-[50%]">
+                                <p>Выберите дату</p>
+                            </div>
+                            <div>
+                                <p>Выберите машину</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[pink] brdr"><img class="w-[768px]" src="./images/car.svg" alt="car"></div>
+                </div>
+                <div class="flex flex-row mt-[-2px] w-[100%]">
+                    <form class="flex flex-row w-[100%]">
+                        <div class="chase-data">
+                            <input class="brdr-b text-[grey] p-2 w-[100%]" placeholder="03.25.2023">
+                            <div class="chase-bottom">
+                                <div>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div class="text-[#637BE4] text-4xl font-bold">
+                                    <p>2300 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chase-data">
+                            <input class="brdr-b text-[grey] p-2 w-[100%]" placeholder="Nissan Almera">
+                            <div class="chase-bottom">
+                                <div>
+                                    <p>Вероятность заказа</p>
+                                </div>
+                                <div class="text-4xl font-bold">
+                                    <p>50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="items-center text-xl brdr py-5 px-16 w-[100%]">
+                        <h4><b>Основные принципы работы сервиса:</b></h4>
+                        <div>
+                            <p>1. Выбрать подходящий автомобиль.</p>
+                            <p>2. Накопить бонусные баллы.</p>
+                            <p>3. Получить снижение стоимости аренды.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row">
+                    <div class="w-[50%]">
+                        <div>
+                            <h1 class="font-semibold text-3xl my-10">О КОМПАНИИ</h1>
+                        </div>
+                        <div>
+                            <p class="w-[80%]">Рынок совместного использования автомобилей (каршеринг) — быстро растущая
+                                отрасль мировой экономики. Согласно отчету Allied Market Research, в следующие несколько
+                                лет этот рынок будет прибавлять по 12% в год, согласно отчету Zion Market Research —
+                                13,5% в год. Растущая популярность каршеринга также означает рост популярности площадок,
+                                которые предлагают эту услугу. Каршеринг – вид проката автомобиля, предназначенный для
+                                аренды на небольшой отрезок времени (несколько часов) и оплачиваемый только за
+                                длительность аренды и пройденное расстояние.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-[768px] brdr" src="./images/photo_1.svg" alt="">
+                    </div>
+                </div>
+                <div class="brdr w-[100%] space-y-20">
+                    <div class="">
+                        <div>
+                            <p class="text-3xl font-bold">ПОИСК</p>
+                        </div>
+                    </div>
+                    <form class="flex flex-row items-end">
+                        <div class="inputs-div"><label for="from">Откуда</label><input class="inputs mt-2" type="text"
+                                placeholder="Сургут"></div>
+                        <div class="inputs-div"><label for="from">Дата</label><input class="inputs mt-2" type="text"
+                                placeholder="03.25.2023"></div>
+                        <div class="inputs-div"><label for="from">Марка автомобиля</label><input class="inputs mt-2"
+                                type="text" placeholder="Nissan Almera"></div>
+                        <button type="button" onclick="handler('search')"
+                            class="button my-30 w-[25%] h-[44px]">Войти</button>
+                    </form>
+                </div>
+                <div class="flex items-start text-3xl w-[100%] mt-20 mb-10">
+                    <a name="stock"></a>
+                    <h2>АКЦИИ</h2>
+                </div>
+                <div class="space-y-14">
+                    <div class="flex justify-between">
+                        <div class="card">
+                            <img class="card-img" src="./images/photo-2.svg" alt="">
+                            <div class="p-10">
+                                <h2 class="font-bold text-xl mb-4">Название акции</h2>
+                                <p>Описание акции. Целевая аудитория каршеринговых сервисов – это жители мегаполисов
+                                    молодого и среднего возраста, которые предпочитают самостоятельное вождение службам
+                                    такси.</p>
+                            </div>
+                            <button type="button" class="button my-30 pb-10 w-[100%]">
+                                <p>Подробнее</p>
+                            </button>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="./images/photo-2.svg" alt="">
+                            <div class="p-10">
+                                <h2 class="font-bold text-xl mb-4">Название акции</h2>
+                                <p>Описание акции. Целевая аудитория каршеринговых сервисов – это жители мегаполисов
+                                    молодого и среднего возраста, которые предпочитают самостоятельное вождение службам
+                                    такси.</p>
+                            </div>
+                            <button type="button" class="button my-30 pb-10 w-[100%]">
+                                <p>Подробнее</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="card">
+                            <img class="card-img" src="./images/photo-2.svg" alt="">
+                            <div class="p-10">
+                                <h2 class="font-bold text-xl mb-4">Название акции</h2>
+                                <p>Описание акции. Целевая аудитория каршеринговых сервисов – это жители мегаполисов
+                                    молодого и среднего возраста, которые предпочитают самостоятельное вождение службам
+                                    такси.</p>
+                            </div>
+                            <button type="button" class="button my-30 pb-10 w-[100%]">
+                                <p>Подробнее</p>
+                            </button>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="./images/photo-2.svg" alt="">
+                            <div class="p-10">
+                                <h2 class="font-bold text-xl mb-4">Название акции</h2>
+                                <p>Описание акции. Целевая аудитория каршеринговых сервисов – это жители мегаполисов
+                                    молодого и среднего возраста, которые предпочитают самостоятельное вождение службам
+                                    такси.</p>
+                            </div>
+                            <button type="button" class="button my-30 pb-10 w-[100%]">
+                                <p>Подробнее</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-suscribe">
+                            <div class=" brdr p-10">
+                                <h2 class="font-bold text-xl mb-4">Название акции</h2>
+                                <p>Описание акции. Целевая аудитория каршеринговых сервисов – это жители мегаполисов
+                                    молодого и среднего возраста, которые предпочитают самостоятельное вождение службам
+                                    такси.</p>
+                            </div>
+                            <form class="w-[100%]">
+                                <div class="inputs-div-sub"><input type="text" class="inputs h-[100%] mt-[-2px]"
+                                        placeholder="User@email..."></div>
+                                <button type="button" class="button-sub pb-10 w-[100%]">
+                                    <p>Подписаться</p>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="hidden container-elements" id="account">
+            <main>
+                <h1 class="text-4xl mt-28">ЛИЧНЫЙ КАБИНЕТ</h1>
+                <div>
+                    <h1 class="text-4xl text-center mt-28">Иванов Иван</h1>
+                    <div class="flex mt-5 space-x-[-2px]">
+                        <div class="info">
+                            <div>
+                                <p>Количество бонусных баллов</p>
+                            </div>
+                            <div><b>120</b></div>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <p>Количество бронирований</p>
+                            </div>
+                            <div><b>12</b></div>
+                        </div>
+                        <button type="button" onclick="handler('sign-up')" class="button w-[200px]">выйти</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="hidden container-elements" id="booking">
+            <main>
+                <div class="flex flex-col space-y-10">
+                    <h1 class="text-4xl text-left mt-10">БРОНИРОВАНИЕ</h1>
+                    <div class="flex flex-col space-y-[-2px]">
+                        <div class="flex flex-row space-x-10 brdr pt-5 pb-10 px-5">
+                            <div>
+                                <p>Марка автомобиля</p><b>Renualt</b>
+                            </div>
+                            <div>
+                                <p>Название автомобиля</p><b>Renualt logan</b>
+                            </div>
+                            <div>
+                                <p>Дата бронирования</p><b>03.24.2023</b>
+                            </div>
+                            <div>
+                                <p>Время бронирования</p><b>12:10</b>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between space-x-[-2px] brdr">
+                            <div class="border-r-2 border-black  w-[50%] text-2xl px-5 py-4 space-y-5">
+                                <div>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div><b>1200р</b></div>
+                            </div>
+                            <div class=" w-[50%] px-5 py-4 text-2xl space-y-5">
+                                <div>
+                                    <p>Вероятность бронирования</p>
+                                </div>
+                                <div><b>90%</b></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row">
+                        <div>
+                            <h1 class="text-2xl ">Данные о водителе</h1>
+                            <form class="flex flex-col space-y-5 mt-10 w-[100%] mb-[30px]">
+                                <div class="inputs-div">
+                                    <label for="name">Имя</label><input class="inputs" id="name" type="text"
+                                        placeholder="Иван">
+                                </div>
+                                <div class="inputs-div">
+                                    <label for="last_name">Фамилия</label><input class="inputs" id="last_name"
+                                        type="text" placeholder="Иванов">
+                                </div>
+                                <div class="inputs-div">
+                                    <label for="Burning">Дата рождения</label><input class="inputs" id="Burning"
+                                        type="text" placeholder="Иван">
+                                </div>
+                                <div class="inputs-div">
+                                    <label for="number-doc">Номер водительского удостоверения</label><input
+                                        class="inputs" id="number-doc" type="text" placeholder="Иван">
+                                </div>
+                                <button onclick="handler('booking-managment')" type="button" class="button my-30 pb-10">
+                                    <p>Оформить бронирование</p>
+                                </button>
+                            </form>
+                        </div>
+                        <div class=" sapce-y-10">
+                            <div>
+                                <p class="text-[grey] text-xl">Финальная стоимость бронирования</p>
+                            </div>
+                            <div><b class="text-4xl">1200Р</b></div>
+                        </div>
+
+                    </div>
+
+                    <div class="h-[30px] w-[100%]"></div>
+                </div>
+            </main>
+        </div>
+
+        <div class="hidden container-elements" id="booking-managment">
+            <main class="">
+                <div class="flex flex-col">
+                    <h1 class="text-3xl font-semibold text-left my-10">Управление бронированием</h1>
+                    <h1 class="text-[grey] text-xl mb-3">Код бронирования</h1>
+                    <p class="text-3xl font-bold mb-10">ASERDG</p>
+                    <div class="flex flex-col space-y-[-2px]">
+                        <div class="flex flex-row space-x-10 brdr pt-5 pb-10 px-5">
+                            <div>
+                                <p>Марка автомобиля</p><b>Renualt</b>
+                            </div>
+                            <div>
+                                <p>Название автомобиля</p><b>Renualt logan</b>
+                            </div>
+                            <div>
+                                <p>Дата бронирования</p><b>03.24.2023</b>
+                            </div>
+                            <div>
+                                <p>Время бронирования</p><b>12:10</b>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between space-x-[-2px] brdr">
+                            <div class="border-r-2 border-black  w-[50%] text-2xl px-5 py-4 space-y-5">
+                                <div>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div><b>1200р</b></div>
+                            </div>
+                            <div class=" w-[50%] px-5 py-4 text-2xl space-y-5">
+                                <div>
+                                    <p>Вероятность бронирования</p>
+                                </div>
+                                <div><b>90%</b></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <p class="text-xl font-semibold mb-5">Данные о водителе</p>
+                        <div class="flex flex-row justify-between">
+                            <div class="space-div">
+                                <div>
+                                    <p>Имя</p>
+                                </div>
+                                <div>
+                                    <p>Иван</p>
+                                </div>
+                            </div>
+                            <div class="space-div">
+                                <div>
+                                    <p>Фамилия</p>
+                                </div>
+                                <div>
+                                    <p>Иванов</p>
+                                </div>
+                            </div>
+                            <div class="space-div">
+                                <div>
+                                    <p>дата рождения</p>
+                                </div>
+                                <div>
+                                    <p>02.02.1999</p>
+                                </div>
+                            </div>
+                            <div class="space-div">
+                                <div>
+                                    <p>Номер водительского удостоверения</p>
+                                </div>
+                                <div>
+                                    <p>03485774 548589</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="handler('seat')" type="button" class="button my-30 w-[30%] mt-10">
+                        Выбрать автомобиль
+                    </button>
+
+                    <div class="h-[30px] w-[100%]"></div>
+                </div>
+            </main>
+        </div>
+
+        <div class="hidden container-elements" id="login">
+            <main>
+                <h1 class="text-4xl mt-28">ВХОД В ЛИЧНЫЙ КАБИНЕТ</h1>
+                <form class="flex flex-col space-y-5 mt-10">
+                    <div class="inputs-div">
+                        <label for="number">Телефон</label><input class="inputs" id="number" type="text"
+                            placeholder="+7...">
+                    </div>
+                    <div class="inputs-div">
+                        <label for="password">Пароль</label><input class="inputs" type="text">
+                    </div>
+                    <button type="button" onclick="handler('account')" class="button my-30">
+                        Войти
+                    </button>
+                </form>
+                <p class="flex flex-col text-center mt-5">Еще не зарегистрированы? <b>
+                        <button type="button" onclick="handler('sign-up')">Зарегистрироваться</button></b></p>
+            </main>
+        </div>
+
+        <div class="hidden container-elements" id="search">
+            <main>
+                <div class="flex flex-col space-y-10">
+                    <h1 class="text-4xl text-left mt-28">РЕЗУЛЬТАТЫ ПОИСКА</h1>
+
+                    <div id="posts">
+
+                        <div class="flex flex-col space-y-[-2px]">
+                            <div class="flex flex-row space-x-10 brdr pt-5 pb-10 px-5">
+                                <div>
+                                    <p>Марка автомобиля</p><b>Renualt</b>
+                                </div>
+                                <div>
+                                    <p>Название автомобиля</p><b>Renualt logan</b>
+                                </div>
+                                <div>
+                                    <p>Дата бронирования</p><b>03.24.2023</b>
+                                </div>
+                                <div>
+                                    <p>Время бронирования</p><b>12:10</b>
+                                </div>
+                            </div>
+                            <div class="flex flex-row justify-between space-x-[-2px] brdr">
+                                <div class="border-r-2 border-black  w-[50%] text-2xl px-5 py-4 space-y-5">
+                                    <div>
+                                        <p>Стоимость</p>
+                                    </div>
+                                    <div><b>1200р</b></div>
+                                </div>
+                                <div class=" w-[50%] px-5 py-4 text-2xl space-y-5">
+                                    <div>
+                                        <p>Вероятность бронирования</p>
+                                    </div>
+                                    <div><b>90%</b></div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="handler('booking')" class="button">Забронировать</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        <div class="hidden container-elements" id="seat">
+            <main class="flex flex-col items-center">
+                <div class="flex flex-col items-start">
+                    <div class="flex flex-col mt-10 text-left">
+                        <p class="text-3xl font-bold my-10">ВЫБОР АВТОМОБИЛЯ</p>
+                        <p class="text-xl ">Схема парковки - ул. Энтузиастов 120</p>
+                        <p class="text-xl mb-10 text-[grey]">Кликните на парковочное место что бы выбрать</p>
+                    </div>
+                    <div class="brdr space-y-20 flex flex-col">
+                        <div class="flex">
+                            <div class="place-div brdr-r">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-r">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-r">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-r">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-r">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-r">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div">
+                                <div class="place"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="place-div brdr-l">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-l">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-l">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-l">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-l">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div brdr-l">
+                                <div class="place"></div>
+                            </div>
+                            <div class="place-div">
+                                <div class="place"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" onclick="handler('index')" class="button w-[270px] mt-10">Забронировать</button>
+            </main>
+        </div>
+
+        <div class="hidden container-elements" id="sign-up">
+            <main>
+                <h1 class="text-4xl mt-20">РЕГИСТРАЦИЯ</h1>
+                <form class="flex flex-col space-y-5 mt-10">
+                    <div class="inputs-div">
+                        <label for="name">Имя</label><input class="inputs" id="name" type="text" placeholder="Иван">
+                    </div>
+                    <div class="inputs-div">
+                        <label for="last_name">Фамилия</label><input class="inputs" id="last_name" type="text"
+                            placeholder="Иванов">
+                    </div>
+                    <div class="inputs-div">
+                        <label for="number-doc">Номер водительского удостоверения</label><input class="inputs"
+                            id="number-doc" type="text" placeholder="Иван">
+                    </div>
+                    <div class="inputs-div">
+                        <label for="number">Телефон</label><input class="inputs" id="number" type="text"
+                            placeholder="+7...">
+                    </div>
+                    <div class="inputs-div">
+                        <label for="password">Пароль</label><input class="inputs" type="text">
+                    </div>
+                    <div class="inputs-div">
+                        <label for="2-password">повтор пароля</label><input class="inputs" id="2-password" type="text">
+                    </div>
+                    <button type="button" onclick="handler('account')" class="button my-30">
+                        <p>Зарегистрироваться</p>
+                    </button>
+                </form>
+                <p class="mt-5">Уже зарегистрированы? <b><button type="button"
+                            onclick="handler('login')">Войти</button></b></p>
+            </main>
+        </div>
+
+        <footer>
+            <div class="space-y-10">
+                <button type="button" onclick="handler('index')"><img id="logo" src="./images/LOGO.svg" alt=""></button>
+
+                <div class="space-x-6">
+                    <a href="#stock" onclick="stockhandler()">Акции</a>
+                    <button type="button" onclick="handler('search')">Поиск</button>
+                    <button type="button" onclick="handler('sign-up')">Регистрация</button>
+                    <button type="button" onclick="handler('login')">Личный кабинет</button>
+                </div>
+            </div>
+            <p class="text-[#637BE4] text-2xl">8 (800) 555-35-35</p>
+        </footer>
+    </div>
+</body>
+
+</html>

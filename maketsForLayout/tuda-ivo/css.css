@@ -1,0 +1,485 @@
+/* чота теги какие-та 
+===========================================================*/
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: auto;
+  }
+
+  body {
+    background-color: black;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+    font-family: 'poppins';
+  }
+
+  p {
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: auto;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    text-decoration: none;
+  }
+
+  nav a img {
+    margin-left: 9px;
+  }
+
+  nav p {
+    color: var(--dark-color);
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #container {
+    margin: 30px 140px;
+  }
+
+  :root {
+    --dark-color: #707070;
+  }
+/* Переменные
+=========================================================== */
+
+/* Стили NAV и его элементов
+=========================================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 56px;
+  font-size: 37px;
+  font-weight: 800;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 56px;
+  font-size: 37px;
+  font-weight: 800;
+}
+
+.logo img {
+  margin-right: 17px;
+}
+
+.sprava {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sprava a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .button-active {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #306EF7;
+  }
+
+  .button {
+    height: 55px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button p {
+    color: var(--dark-color);
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .title h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins';
+    font-weight: 700px;
+    font-size: 112px;
+    margin: 0;
+  }
+
+  .h1-gradient {
+    background: linear-gradient(to right, #FE6783, #FFBF84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Меню с быстрой регистрацией 
+  ==========================================================*/
+  .fast-start {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 690px;
+    margin: 95px auto 0 auto;
+  }
+
+  .fast-start p {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .fast-start-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .fast-start-buttons a {
+    display: flex;
+    align-items: center;
+    padding: 25px 60px;
+    font-size: 150%;
+    color: white;
+    width: 200px;
+  }
+
+  .fast-start-button-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    border-radius: 10px;
+    background-color: #306EF7;
+  }
+
+  .fast-start-button-active p {
+    font-size: 20px;
+    margin: 18px 22px;
+  }
+
+  .fast-start-button {
+    justify-content: center;
+    height: auto;
+    width: auto ;
+    border-radius: 10px;
+    color: var(--dark-color) !important;
+    border: 1px solid #707070;
+    background-color: black;
+  }
+
+  .fast-start-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fast-start-footer div {
+    margin: 0 15px 0 0;
+  }
+
+  .green-dot {
+    border: 5px solid;
+    border-color: #0a7f3b;
+    width: 15px;
+    height: 15px;
+    border-radius: 60px;
+    background-color: rgba(15 198,92, 1);
+  }
+
+  .fast-start-footer-p1 {
+    font-weight: 700;
+    font-size: 25px !important;
+    margin-right: 15px;
+  }
+
+  .fast-start-footer-p2 {
+    color: var(--dark-color);
+    font-weight: 300;
+    font-size: 25px !important;
+  }
+/* Подзаголовок Why Love 
+========================================================== */
+  .promo-block {
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .promo-block-h {
+    font-size: 75px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .promo-block-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  .promo-block-points-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+
+  .promo-block-points-h {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .promo-block-points-p {
+    text-align: center;
+    font-size: 22px;
+    color: var(--dark-color) !important;
+  }
+
+/* Блоки с шагами
+==============================================================================*/
+.block-step {
+  display: flex;
+  margin: 70px 0 0 0;
+  flex-direction: column;
+  width: 100%;
+}
+
+.block-step-main {
+  justify-content: space-between;
+}
+
+.block-step-main-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.block-step-promo-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 85px;
+}
+
+/* Заголовок */
+
+.block-step-step {
+  text-align: center;
+  font-size: 25px;
+  color: #3D82F2;
+}
+
+.block-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.block-head p {
+  text-align: center;
+}
+
+.block-head-heading {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.block-head-PS {
+  width: 950px;
+}
+
+.block-head-PS p {
+  color: var(--dark-color);
+  font-size: 30px;
+  text-align: center;
+}
+
+  /* Промо блок в "шагах" */
+.block-step-main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 140px;
+}
+
+.fast-start-button p {
+  margin: 20px 32px;
+  font-size: 20px;
+  color: var(--dark-color);
+}
+
+.block-step-promo-ability {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.block-step-promo-heading {
+  font-size: 75px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.block-step-promo-heading span {
+  color: #3C82F4;
+}
+
+.block-step-promo {
+  display: flex;
+  flex-direction: column;
+}
+
+  /* список */
+  .block-step-ol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-step-ol-str {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;  
+  }
+
+  .block-step-ol-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .block-step-ol-txt {
+    font-size: 23px;
+  }
+
+/* картинка в "шагах" */
+
+.block-step-image {
+ display: flex;
+ margin: 0 15px;
+}
+
+/* comments
+================================================================================ */
+.comments img {
+  width: 100%;
+}
+/* image
+================================================================================ */
+.image {
+  margin-bottom: 100px;
+}
+
+.image p {
+  position: relative;
+  top: 500px;
+}
+
+.image img {
+  width: 100%;
+}
+
+/* footer
+================================================================================ */
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.end  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slow-start-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sleva {
+  
+}
+
+/* end-head */
+.end-head p{
+  text-align: center;
+}
+
+.end-heading-1 {
+  font-size: 100px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.end-heading-2 {
+  font-size: 43px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+/* снизу */
+.snizu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.snizu a {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.snizu p {
+  color: var(--dark-color);
+}

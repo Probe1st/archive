@@ -1,0 +1,36 @@
+.window_reg h2 {
+    color: #33A9FF;
+}
+
+.window_reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    padding: 40px 0;
+
+    width: 45%;
+
+    background-color: white;
+    border-radius: 31px ;
+}
+
+form {
+    width: 74%;
+}
+
+.window_reg_input div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.window_reg_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.window_reg a {
+    margin-top: 10px;
+}

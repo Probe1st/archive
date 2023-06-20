@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply flex flex-col items-center;
+}
+
+header{
+    @apply flex flex-col max-w-[1200px] items-center w-full mt-7;
+}
+
+footer {
+    @apply flex flex-col items-center text-white w-full pt-20;
+}
+
+footer > div:first-child img {
+    @apply w-[3em];
+}
+
+footer > div:last-child img{
+    @apply w-[1.5em];
+}
+
+p {
+    @apply font-thin;
+}
+
+.cont {
+    @apply flex flex-col items-center w-full min-h-[15vh];
+}
+
+nav > link {
+    @apply cursor-pointer;
+}
+
+.currentPage {
+    @apply text-gray-500;
+}
+
+.button {
+    @apply flex flex-row space-x-9 py-2 px-7 rounded-full 
+    font-semibold items-center w-fit h-fit buttonAnim;
+}
+
+.button-lg {
+    @apply flex flex-row space-x-9 py-4 px-16 rounded-full 
+    font-semibold items-center w-fit h-fit buttonAnim;
+}
+
+.buttonAnim {
+    @apply hover:text-white hover:bg-[#3c3c3c] duration-200;
+}
+
+.activeButton {
+    @apply bg-[#383838] text-white;
+}
+
+.inactiveButton {
+    @apply bg-[#e0e0e0];
+}
+
+.objectDisign > div {
+    @apply space-y-3;
+}
+
+.objectDisign > div > img {
+    @apply rounded-md;
+}
+
+.slider {
+    @apply appearance-none w-full h-1 outline-none bg-[#f4f4f4] 
+    rounded-full;
+}
+
+.slider::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 bg-black cursor-pointer rounded-full;
+}
+
+.slider::-webkit-slider-thumb::before {
+    @apply content-["123"] bg-green-300 text-black; 
+}
+
+.slider::-moz-range-thumb {
+    @apply w-4 h-4 bg-black cursor-pointer rounded-full;
+}
+
+.sliderTitle {
+    @apply flex flex-col items-center justify-center w-12 h-8 shadow-md;
+}
+
+#testPages h3{
+    @apply text-2xl mb-5;
+}
+
+[id="3"] > div {
+    @apply flex flex-row space-x-3 items-center;
+}
+
+.fourImage div {
+    @apply object-fill overflow-hidden h-52;
+}
+
+.tariff {
+    @apply grid grid-cols-3 text-center mt-28;
+}
+
+.tariff > div {
+    @apply flex flex-col items-center justify-between space-y-[1.5em];
+}
+
+.tariff > div > div {
+    @apply space-y-[1.5em] px-10;
+}
+
+.tariff h3 {
+    @apply text-3xl;
+}
+
+.tariff p {
+    @apply text-xl font-thin;
+}
+
+[type="circleWithDot"] li{
+    @apply before:content-["๏"] before:mr-1 before:text-sm;
+}
+
+[type="bigAround"] > li > p:first-child {
+    @apply border border-white px-[1em] py-[0.5em] rounded-full w-fit h-fit
+}
+
+[type="bigAround"] > li {
+    @apply flex flex-row items-center space-x-10;
+}
+
+.supervision {
+    @apply flex flex-col space-y-[2.5em] w-[45%];
+}
+
+.supervision > div {
+    @apply flex flex-row;
+}
+
+.supervision img{
+    @apply w-[50px];
+}
+
+.supervision h3 {
+    @apply text-3xl font-semibold mb-[0.5em];
+}
+
+.supervision p {
+    @apply text-xl;
+}
+
+#contacts form {
+    @apply flex flex-col items-start text-xl space-y-10 mt-5;
+}
+
+#contacts form > div {
+    @apply flex flex-col w-full space-y-3;
+}
+
+#contacts form  input, textarea {
+    @apply border border-black rounded-lg w-full p-5 outline-none;
+}
+
+#contacts form label {
+    @apply font-thin;
+}

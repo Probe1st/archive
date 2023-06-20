@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  header {
+    @apply flex flex-row justify-between items-center pt-7 pb-5 px-5 border-x-2 border-t-2 border-black;
+  }
+  footer {
+    @apply flex flex-row justify-between items-center mt-16 pt-7 pb-5 px-7 border-2 border-black;
+  }
+  .container {
+    @apply flex flex-col mx-auto min-h-[100vh] h-[100%];
+  }
+  .border-round {
+    @apply border-2 border-black;
+  }
+  .inputs {
+    @apply border-2 border-black w-[100%];
+  }
+  .inputs-div {
+    @apply w-1/4 flex flex-col space-y-2 text-left;
+  }
+  .button {
+    @apply flex items-center justify-center
+    text-center bg-black text-white;
+  }
+  .button-reverse {
+    @apply bg-[grey] border-round text-white py-3 w-[100%];
+  }
+  .card {
+    @apply my-10 border-round mx-auto w-[80%];
+  }
+  .data {
+    @apply px-5 pt-7 pb-5 w-[100%] text-center space-y-5 text-xl;
+  }
+  .seat {
+    @apply hover:bg-[#b5e61d]
+    rounded-2xl bg-[grey] w-[50%] h-[100px];
+  }
+  .seat-div {
+    @apply flex border-x border-black p-5 w-[20%] items-center justify-center;
+  }
+  .w25 {
+    @apply w-[25%];
+  }
+  .special-card {
+    @apply flex flex-col justify-between border-round w-[48%];
+  }
+}

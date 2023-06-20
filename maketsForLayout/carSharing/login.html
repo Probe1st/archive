@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .container {
+                @apply mx-auto w-[80%] h-[100vh];
+            }
+            .brdr {
+                @apply border-2 border-black;
+            }
+            .brdr-b {
+                @apply border-b-2 border-black;
+            }
+            header {
+                @apply brdr-b flex justify-between items-end pt-7 pb-4 px-5;
+            }
+            main {
+                @apply flex flex-col items-center;
+            }
+            .inputs {
+                @apply border-2 border-black mt-2 placeholder:text-xl;
+            }
+            .inputs-div {
+                @apply flex flex-col text-xl;
+            }
+            .button {
+                @apply bg-black text-white text-center py-3 text-xl;
+            }
+        }
+    </style>
+    <title>login</title>
+</head>
+<body>
+    <div class="container brdr">
+        <header>
+            <img src="./images/LOGO.svg" alt="">
+            <div class="space-x-6">
+                <a href="">Акции</a>
+                <a href="./search.html">Поиск</a>
+                <a href="./Sing_up.html">Регистрация</a>
+                <a href="./account.html">Личный кабинет</a>
+            </div>
+        </header>
+        <main>
+            <h1 class="text-4xl mt-28">ЗАРЕГИСТРИРОВАТЬСЯ</h1>
+            <form class="flex flex-col space-y-5 mt-10" action="POST">
+                <div class="inputs-div">
+                    <label for="number">Телефон</label><input class="inputs" id="number" type="text" placeholder="+7...">
+                </div>
+                <div class="inputs-div">
+                    <label for="password">Пароль</label><input class="inputs" type="text">
+                </div>
+                <button class="button my-30">
+                    <p>Войти</p>
+                </button>
+            </form>
+            <p class="flex flex-col text-center mt-5">Еще не зарегистрированы? <b><a href="./Sing_up.html">Зарегистрироваться</a></b></p>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .container {
+                @apply mx-auto w-[80%] h-[100%];
+            }
+            .brdr {
+                @apply border-2 border-black;
+            }
+            .brdr-b {
+                @apply border-b-2 border-black;
+            }
+            .brdr-r {
+                @apply border-r-2 border-black;
+            }
+            .brdr-l {
+                @apply border-r-2 border-black;
+            }
+            header {
+                @apply brdr-b flex justify-between items-end pt-7 pb-4 px-5;
+            }
+            main {
+                @apply flex flex-col items-center;
+            }
+            .inputs {
+                @apply border-2 border-black mt-2 placeholder:text-xl;
+            }
+            .inputs-div {
+                @apply flex flex-col text-xl;
+            }
+            .button {
+                @apply bg-black text-white;
+            }
+            .button-disable{
+                @apply bg-[grey] text-[#464646] text-center py-3 text-xl;
+            }
+            .space-div{
+                @apply space-y-5;
+            }
+            .place{
+                @apply w-[42px] h-[97px] bg-[grey] hover:bg-[#BEFF9F] rounded-xl;
+            }
+            .place-active{
+                @apply bg-[green];
+            }
+            .place-div {
+                @apply flex flex-row py-4 px-10;
+            }
+        }
+    </style>
+    <title>Seat</title>
+
+
+</head>
+<body>
+    <div class="container brdr">
+        <header>
+            <img src="./images/LOGO.svg" alt="">
+            <div class="space-x-6">
+                <a href="">Акции</a>
+                <a href="./search.html">Поиск</a>
+                <a href="./Sing_up.html">Регистрация</a>
+                <a href="./account.html">Личный кабинет</a>
+            </div>
+        </header>
+        <main class="flex flex-col items-center">
+            <div class="flex flex-col items-start">
+                <div class="flex flex-col mt-10 text-left">
+                    <p class="text-3xl font-bold my-10">ВЫБОР АВТОМОБИЛЯ</p>
+                    <p class="text-xl ">Схема парковки - ул. Энтузиастов 120</p>
+                    <p class="text-xl mb-10 text-[grey]">Кликните на парковочное место что бы выбрать</p>
+                </div>
+                <div class="brdr space-y-20 flex flex-col">
+                    <div class="flex">
+                        <div class="place-div brdr-r">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-r">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-r">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-r">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-r">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-r">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div">
+                            <div class="place"></div>
+                        </div>
+                    </div>
+    
+                    <div class="flex">
+                        <div class="place-div brdr-l">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-l">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-l">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-l">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-l">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div brdr-l">
+                            <div class="place"></div>
+                        </div>
+                        <div class="place-div">
+                            <div class="place"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="buttonChange" disabled class="button-disable w-[270px] mt-10">Забронировать</button>
+        </main>
+        <div class="h-[30px] w-[100%]"></div>
+    </div>
+</body>
+<script>
+    function selectPlace(event){
+        const elem = event.target;
+        elem.classList.toggle("place-active");
+    }
+
+    function addEvent(){
+        let elements = document.querySelectorAll(".place");
+        for (let elem of elements){
+            elem.addEventListener('click', selectPlace)
+        }
+    }
+    addEvent();
+ 
+</script>
+</html>

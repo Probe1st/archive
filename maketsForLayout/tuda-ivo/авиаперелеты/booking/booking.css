@@ -1,0 +1,98 @@
+body {
+    background-color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+hr {
+    border-style: dashed;
+    width: 100%;
+}
+
+.card, .cities, .time {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    border: 2px solid;
+    border-color: grey;
+    border-radius: 10px;
+
+    justify-content: space-between;
+
+    width: auto;
+
+    padding: 30px;
+    
+    margin-right: 80px;
+}
+
+.info {
+    margin-right: 50px;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.count {
+    margin-left: 30px;
+}
+
+.count {
+    margin-right: 12px;
+}
+
+.cities {
+    justify-content: space-between;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.time div{
+    width: 50px;
+    border-bottom: 2px dashed;
+    margin: 0 10px;
+}
+
+.count, .probability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    width: 152px ;
+}
+.count{
+    background-color: #74E6FF;
+}
+
+.probability {
+    background-color: #9DD0FF;
+}
+
+/* добвление пассажиров */
+
+.submit-button {
+    background-color: #CCE6FF;
+
+    color: black;
+}
+
+.add {
+    display: flex;
+    flex-direction: row;
+
+}

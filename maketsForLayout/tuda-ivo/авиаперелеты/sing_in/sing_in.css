@@ -1,0 +1,57 @@
+.window_reg h2 {
+    color: #33A9FF;
+}
+
+.window_reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0;
+
+    width: 45%;
+
+    background-color: white;
+    border-radius: 31px ;
+}
+
+form {
+    width: 74%;
+}
+
+.window_reg_input div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    flex-direction: column;
+}
+
+.window_reg_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.window_reg a {
+    margin-top: 10px;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28%;
+
+    background-color: #7DC9FF;
+    border-radius: 10px ;
+    border: none;
+
+    padding: 17px;
+
+    color: white;
+    font-size: 18px;
+
+    margin: auto;
+    margin-top: 30px;
+}

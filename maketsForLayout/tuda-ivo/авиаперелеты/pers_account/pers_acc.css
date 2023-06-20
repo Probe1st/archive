@@ -1,0 +1,85 @@
+body {
+    background-color: white;
+}
+
+main {
+    display: flex;
+    margin: 0 120px;
+    align-items: flex-start;
+}
+
+div {
+    display: flex;
+}
+
+.info-client h2 {
+    font-weight: 400;
+}
+
+
+
+.info-client div {
+    flex-direction: column;
+}
+
+.booking-text {
+    color: #0B4B75;
+}
+
+.info {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0;
+}
+
+.submit-button {
+    background-color: #7DC9FF;
+
+    margin-left: 25px;
+}
+
+hr {
+    width: 120%;
+    background-color: black;
+}
+
+/* history
+=========================== */
+
+.history {
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #CEE2FF;
+    flex-direction: column;
+
+    width: 100%;
+    
+    padding: 40px;
+}
+
+.card {
+    justify-content: space-between;
+
+    background-color: #E1F3FF;
+    border-radius: 18px;
+
+    
+
+    padding: 20px 45px;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-left {
+    flex-direction: column;
+}
+.card-right {
+    flex-direction: column;
+}
+
+.heading {
+    color: #182C39;
+    font-weight: 500;
+}

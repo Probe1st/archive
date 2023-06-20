@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./etkmsngb-m1/stylesheets/booking.css">
+</head>
+
+<body>
+    <div class="container border-round justify-between">
+        <header>
+            <a href="./etkmsngb-m1/index.html"><img src="./etkmsngb-m1/images/logo.png" class="h-[50px]" alt=""></a>
+
+            <div class="space-x-5">
+                <a href="./etkmsngb-m1/index.html#specials">Акции</a>
+                <a href="./etkmsngb-m1/search.html">Поиск</a>
+                <a href="./etkmsngb-m1/register.html">Регистрация</a>
+                <a href="./etkmsngb-m1/profile.html">Личный кабинет</a>
+            </div>
+        </header>
+
+        <main class="flex flex-col mx-auto w-[70%]">
+            <div class="mb-16">
+                <h1 class="text-3xl">Бронирование</h1>
+            </div>
+            <section class="flex flex-col justify-between w-[80%] mx-auto items-center text-center">
+                <div class="flex flex-row justify-between items-center w-[100%]">
+                    <div>
+                        <h2>Заполните данные</h2>
+                        <form class="flex flex-col items-center space-y-5 mt-5">
+                            <div class="inputs-div">
+                                <label for="name">Имя</label>
+                                <input class="inputs" type="text" name="name" id="name" placeholder="Иван">
+                            </div>
+                            <div class="inputs-div">
+                                <label for="last-name">Фамилия</label>
+                                <input class="inputs" type="text" name="last-name" id="last-name" placeholder="Иванов">
+                            </div>
+                            <div class="inputs-div">
+                                <label for="birth">Дата рождения</label>
+                                <input class="inputs" type="date" name="birth" id="birth">
+                            </div>
+                            <div class="inputs-div">
+                                <label for="number-doc">Номер водительского удостоверения</label>
+                                <input class="inputs" type="text" name="number-doc" id="number-doc">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-3xl">
+                        <h2>Итоговая стоимость</h2>
+                        <p>10 000 p.</p>
+                    </div>
+                </div>
+                <a type="button" href="./etkmsngb-m1/booking_management.html" class="button mt-10">Забронировать</a>
+            </section>
+        </main>
+
+        <footer>
+            <div class=" flex flex-col items-start space-y-5 ">
+                <a href="./etkmsngb-m1/index.html"><img src="./etkmsngb-m1/images/logo.png" class="h-[50px]" alt=""></a>
+                <div class="space-x-5 ">
+                    <a href="./etkmsngb-m1/index.html#specials">Акции</a>
+                    <a href="./etkmsngb-m1/search.html">Поиск</a>
+                    <a href="./etkmsngb-m1/register.html">Регистрация</a>
+                    <a href="./etkmsngb-m1/profile.html">Личный кабинет</a>
+                </div>
+            </div>
+            <div>
+                <h3>телефон</h3>
+                <p class="text-[purple]">8 (800) 555-35-35</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+#root {
+    @apply flex flex-col w-full items-center min-h-screen h-fit;
+}
+
+button {
+    @apply bg-gray-300 border border-black rounded-full mr-5 py-2 px-5
+}
+
+input {
+    @apply outline-none border border-black rounded-full px-4 py-1
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+/* admin */
+#admin nav {
+    @apply flex flex-col w-full items-start justify-center border h-16 px-10
+}
+
+#admin nav ul li{
+    @apply text-xl cursor-pointer
+}
+
+/* таблица контактов */
+.table div{
+    @apply flex flex-row;
+}
+
+.table div p {
+    @apply w-[200px] border
+}
+
+.table div[data-table] > div:nth-child(2n) {
+    @apply bg-gray-200;
+}
+
+div[data-table] {
+    @apply flex flex-col
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./etkmsngb-m1/stylesheets/output.css">
+</head>
+
+<body>
+    <div class="container justify-between">
+        <header>
+            <a href="./etkmsngb-m1/index.html"><img src="./etkmsngb-m1/images/logo.png" class="h-[50px]" alt=""></a>
+
+            <div class="space-x-5">
+                <a href="./etkmsngb-m1/index.html#specials">Акции</a>
+                <a href="./etkmsngb-m1/search.html">Поиск</a>
+                <a href="./etkmsngb-m1/register.html">Регистрация</a>
+                <a href="./etkmsngb-m1/profile.html">Личный кабинет</a>
+            </div>
+        </header>
+
+        <main class="flex flex-col mx-auto">
+            <!-- Секция принципа накопления баллов -->
+            <section>
+
+            </section>
+
+            <!-- Секция о доверии компании  -->
+            <section class="flex w-[100%] border-round">
+                <div class="flex w-[100%] items-center text-left pl-5">
+                    <h1 class="text-6xl">Владей поездкой, а не автомобилем!</h1>
+                </div>
+                <div class="w-[100%]">
+                    <img src="./etkmsngb-m1/images/Lozung.jpg" alt="">
+                </div>
+            </section>
+
+            <!-- Форма поиска -->
+            <section class="mt-10">
+                <h2 class="text-2xl mb-5">Поиск</h2>
+                <form class="flex flex-col">
+                    <div class="flex flex-row">
+                        <label class="w25" for="name">Город отправления</label>
+                        <label class="w25" for="name">Дата</label>
+                        <label class="w25" for="name">Марка автомобиля</label>
+                        <div class="w25"></div>
+                    </div>
+                    <div class="flex flex-row">
+                        <div class="inputs-div">
+
+                            <input class="inputs" type="text" name="city" id="city" placeholder="Москва">
+                        </div>
+                        <div class="inputs-div">
+
+                            <input class="inputs" type="text" name="date" id="date" placeholder="10.05.2023">
+                        </div>
+                        <div class="inputs-div">
+
+                            <input class="inputs" type="text" name="mark" id="mark" placeholder="BMW">
+                        </div>
+                        <a class="button w-1/4 max-h-[50%]" href="./etkmsngb-m1/search.html">Найти</a>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Акции -->
+            <a id="specials"></a>
+            <section class="mt-5">
+                <h2 class="text-2xl my-5">Акции</h2>
+
+                <div class="flex flex-col space-y-10">
+
+                    <!-- 1 строка -->
+                    <div class="flex flex-row justify-between">
+                        <div class="special-card ">
+                            <div class="flex flex-row justify-center w-[100%]">
+                                <img src="./etkmsngb-m1/images/mashiny-dlya-devushek.jpg" alt="">
+                            </div>
+
+                            <div>
+                                <div class="border-y-2 border-black py-3 px-5">
+                                    <h3 class="text-xl">Скидка на машины для девущек!</h3>
+                                    <p>В такой особенный день скидка на машина для девушек</p>
+                                </div>
+                                <a class="button" href="#">Побдробнее</a>
+                            </div>
+                        </div>
+                        <div class="special-card ">
+                            <div class="flex flex-row justify-center w-[100%]">
+                                <img src="./etkmsngb-m1/images/tesla_car_PNG54.png" alt="">
+                            </div>
+
+                            <div>
+                                <div class="border-y-2 border-black py-3 px-5">
+                                    <h3 class="text-xl">Появилась новая тесла!</h3>
+                                    <p>Скидка на новый ряд машин</p>
+                                </div>
+                                <a class="button" href="#">Побдробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 2 строка -->
+                    <div class="flex flex-row justify-between">
+                        <div class="special-card ">
+                            <div class="flex flex-row justify-center w-[100%]">
+                                <img src="./etkmsngb-m1/images/toyota-land-cruiser-prado-2002-2009-4609sm-1024x596.jpeg"
+                                    alt="">
+                            </div>
+
+                            <div>
+                                <div class="border-y-2 border-black py-3 px-5">
+                                    <h3 class="text-xl">Сезон внедорожников!</h3>
+                                    <p>Не упустисвой шанс поездить на мошнейших машинах!</p>
+                                </div>
+                                <a class="button" href="#">Побдробнее</a>
+                            </div>
+                        </div>
+                        <div class="special-card ">
+                            <div class="flex flex-row justify-center w-[100%]">
+                                <img src="./etkmsngb-m1/images/vaz-2107.jpg" alt="">
+                            </div>
+
+                            <div>
+                                <div class="border-y-2 border-black py-3 px-5">
+                                    <h3 class="text-xl">Уникальная акция!</h3>
+                                    <p>В прокате появились раритетные машины!</p>
+                                </div>
+                                <a class="button" href="#">Побдробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Форма для подписки на закрыте акции -->
+            <section class="mt-10 w-[30%] mx-auto">
+                <form>
+                    <label>Подпишитесь на рассылку</label>
+                    <input class="inputs" type="email" name="email" id="email" placeholder="email">
+                    <button type="button" class="button w-[100%]">Подписаться</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class=" flex flex-col items-start space-y-5 ">
+                <a href="./etkmsngb-m1/index.html"><img src="./etkmsngb-m1/images/logo.png" class="h-[50px]" alt=""></a>
+                <div class="space-x-5 ">
+                    <a href="./etkmsngb-m1/index.html#specials">Акции</a>
+                    <a href="./etkmsngb-m1/search.html">Поиск</a>
+                    <a href="./etkmsngb-m1/register.html">Регистрация</a>
+                    <a href="./etkmsngb-m1/profile.html">Личный кабинет</a>
+                </div>
+            </div>
+            <div>
+                <h3>телефон</h3>
+                <p class="text-[purple]">8 (800) 555-35-35</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

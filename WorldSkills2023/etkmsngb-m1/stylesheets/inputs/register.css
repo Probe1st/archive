@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  header {
+    @apply flex flex-row justify-between items-center pt-7 pb-5 px-5 border-b-2 border-black;
+  }
+  footer {
+    @apply flex flex-row justify-between items-center pt-7 pb-5 px-7 border-t-2 border-black;
+  }
+  .container {
+    @apply flex flex-col
+    mx-auto min-h-[100vh] h-[100%];
+  }
+  .border-round {
+    @apply border-2 border-black;
+  }
+  .inputs {
+    @apply border-2 border-black w-[100%];
+  }
+  .inputs-div {
+    @apply w-[100%] flex flex-col space-y-2 text-left;
+  }
+  .button {
+    @apply bg-black text-white py-3 w-[70%];
+  }
+}

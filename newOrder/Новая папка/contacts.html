@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="images/png/el.png" type="image/x-icon">
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="grid grid-cols-3 grid-rows-1">
+            <div></div>
+
+            <img class="w-[80%]" src="images/png/logo.png" alt="logo">
+
+            <div class="justify-self-end self-center font-thin underline text-gray-500">
+                <p>+7 (915) 283-24-17</p>
+                <p>versiya@list.ru</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col mt-5 items-center w-full p-5 border-y">
+            <nav class="w-[60%] flex flex-row justify-between font-semibold">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="portfolio.html">ПОРТФОЛИО</a>
+                <a href="prices.html">УСЛУГИ</a>
+                <a href="team.html">О БЮРО</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="testing.html">УЗНАТЬ СТОИМОСТЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cont">
+        <div id="contacts" data-title="Контакты">
+            <div class="flex flex-row mt-20">
+                <div class="w-7/12">
+                    <img src="images/jpg/photo (1).jpg" alt="">
+                </div>
+    
+                <div class="w-5/12 p-20">
+                    <div>
+                        <h1 class="text-5xl font-thin">Наши контакты</h1>
+                        <p class="text-xl my-[1em]">Если вы хотите с нами связаться, заполните форму.</p>
+                    </div>
+    
+                    <form>
+                        <div>
+                            <label for="email">Электронная почта</label>
+                            <input placeholder="example@gmail.ru" type="email" name="email">
+                        </div>
+    
+                        <div>
+                            <label for="name">Имя</label>
+                            <input placeholder="Ваше имя" type="text" name="name">
+                        </div>
+    
+                        <div>
+                            <label for="telephone">Телефон</label>
+                            <input class="placeholder:text-gray-400" placeholder="+0 (000) 00-00" type="tel" name="telephone">
+                        </div>
+    
+                        <div>
+                            <label for="message">Сообщение</label>
+                            <textarea type="text" name="telephone"></textarea>
+                        </div>
+                        
+                        <button class="button-lg border border-black">Отправил</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

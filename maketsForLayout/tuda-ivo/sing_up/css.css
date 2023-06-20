@@ -1,0 +1,69 @@
+/* общие классы
+========================================== */
+
+.width-100 {
+    width: 100%;
+}
+
+.margin-none {
+    margin: 0;
+}
+
+/* Заголовок с полписью
+========================================== */
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 0 0 0 ;
+}
+
+.heading h1 {
+    font-size: 75px;
+}
+
+.heading p {
+    font-size: 24px;
+}
+/* Формы
+========================================== */
+.forms form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 400px;
+}
+
+.forms input {
+    background-color: black;
+    border: none;
+    width: 100%;
+
+    outline: none;
+
+    color: white;
+    font-size: 23px;
+
+}
+
+.forms div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+    height: 100px;
+}
+
+.snd-line button {
+    width: 140px;
+}
+
+.Username {
+    flex-direction: column;
+}
+.Email_address {
+    flex-direction: column;
+}
+.Password {
+    flex-direction: column;
+}

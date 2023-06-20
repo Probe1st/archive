@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tailWindCSS.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/tailWindCSS">
+        @layer utilities {
+            /* tags */
+            * {
+                @apply m-[0];
+            }
+            html {
+                @apply font-sans;
+            }
+            header {
+                @apply flex justify-between md-width text-xl mb-20;
+            }
+            body {
+                @apply bg-white;
+            }
+            main {
+                @apply flex flex-col w-screen;
+            }
+            main > section:nth-child(2n) {
+                @apply bg-[#F0F2F4];
+            }
+            .container {
+                @apply w-screen my-10;
+            }
+            p {
+                @apply text-[#05060680] text-base;
+            }
+            h1~p, h2~p, h3~p{
+                @apply text-3xl;
+            }
+            h1 { @apply text-6xl}
+            h2 { @apply text-5xl}
+            h3 { @apply text-4xl}
+            h4 { @apply text-3xl}
+            h5 { @apply text-2xl}
+            h6 { @apply text-xl }
+
+            nav > ul{
+                @apply flex space-x-16 font-normal items-center;
+            }
+            /* ----------------------------------------------- */
+
+            /* buttons */
+            .button {
+                @apply bg-black text-white px-[1em] p-[0.5em] rounded-xl;
+            }
+            .button-white {
+                @apply bg-white text-black px-[1em] p-[0.5em] rounded-xl;
+            }
+            /* ----------------------------------------------- */
+
+            /* templates */
+            .sm-width {
+                @apply w-[50%] mx-auto;
+            }
+            .md-width {
+                @apply w-[80%] mx-auto;
+            }
+            /* ----------------------------------------------- */
+
+            /* dark-table */
+            .dark-table {
+                @apply bg-[#202425] rounded-xl rounded-tr-none;
+            }
+            .dark-table p, h5 {
+                @apply text-white;
+            }
+            .dark-table > div {
+                @apply flex border-b border-[#FFFFFF0D];
+            }
+            .dark-table > div:last-child{
+                @apply border-none;
+            }
+            .dark-table > div > div {
+                @apply w-1/2;
+            }
+            .dark-table > div > div:first-child{
+                @apply px-12 py-16 space-y-5;
+            }
+            .dark-table > div > div:last-child{
+                @apply flex items-center justify-end;
+            }
+            .dark-table > div > img {
+                @apply w-1/2 ;
+            }
+            /* ----------------------------------------------- */
+
+            /* light-table */
+            .light-table {
+                @apply bg-white rounded-xl;
+            }
+            
+            /* ----------------------------------------------- */
+        }
+    </style>
+    <title>YCode</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div><img src="images/svg/ycode-filled-white.svg" alt="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li class="flex space-x-2 items-center"><a href="#">Resources</a><img class="h-[10px]"
+                            src="images/svg/arrows.svg" alt=""></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a class="button" href="#">Get started free</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 1-st -->
+            <section class="flex flex-col mx-auto space-y-24">
+                <div class="flex flex-col md-width space-y-24">
+                    <div>
+                        <h1 class="mb-10">Visual development platform for designers and agencies</h1>
+                        <p>Transform ideas into dynamic and database driven websites. Visually build
+                            and design beautiful,
+                            responsive web projects without compromising your vision.</p>
+                    </div>
+                    <div class="text-2xl space-x-10">
+                        <a class="button" href="#">Get started free</a>
+                        <a class="button-white" href="#">Book a demo</a>
+                    </div>
+                </div>
+                <img class="w-[95%] self-center" src="images/png/demo.png" alt="demo">
+
+            </section>
+
+            <!-- 2-nd -->
+            <section class="flex flex-col ">
+
+                <div class="flex flex-col md-width py-40 items-center">
+
+                    <!-- heading -->
+                    <article class="text-center space-y-16 w-3/5 mb-24">
+                        <h2>Full design control in your hands</h2>
+                        <h4>Everything you design should look and feel amazing. Our visual editor gives you full control
+                            to
+                            create designs that impress.</h4>
+                    </article>
+
+                    <!-- dark-table -->
+                    <article class="dark-table">
+                        <!-- 1-st block -->
+                        <div>
+                            <div>
+                                <h5>Reusable styles</h5>
+                                <p>Create and reuse styles for your elements across whole project.</p>
+                            </div>
+                            <div>
+                                <img src="images/png/IMAGE1.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 2-nd block -->
+                        <div>
+                            <div>
+                                <h5>Breakpoints</h5>
+                                <p>Adapt web apps to different device sizes and optimize responsiveness.</p>
+                            </div>
+                            <div>
+                                <img src="images/png/IMAGE2.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 3-rd block -->
+                        <div>
+                            <div>
+                                <h5>Components</h5>
+                                <p>Save groups of elements as components and reuse them for quicker building.</p>
+                            </div>
+                            <div>
+                                <img src="images/png/IMAGE3.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 4-th block -->
+                        <div>
+                            <div>
+                                <h5>Animations</h5>
+                                <p>Bring more charm to your designs by setting up animations.</p>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 5-th -->
+                        <div>
+                            <div>
+                                <h5>Design properties</h5>
+                                <p>Ycode gives you control of all CSS design properties visually.</p>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 6-th -->
+                        <div>
+                            <div>
+                                <h5>Pre-built layouts</h5>
+                                <p>Start quickly with elements like heros, headers, footers and etc.</p>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- 3-nd -->
+            <section class="flex flex-col md-width">
+                <!-- 1-st atricle -->
+                <article class="flex flex-row my-64 sm-width">
+                    <h2 class="w-2/6">CMS</h2>
+                    <p class="w-4/6">Build content structures that match your needs and import data
+                        manually or in bulk. Let
+                        copywriters easily work with content via content management system or visually on canvas
+                        without breaking design.</p>
+                </article>
+
+                <!-- 2-nd article -->
+                <article class="flex flex-col md-width space-y-11">
+                    <div class="space-y-6">
+                        <h2 class="w-2/6">Workflows</h2>
+                        <p class="w-4/6">Set up triggers to send emails, display elements or create and edit
+                            CMS items via forms.</p>
+                    </div>
+
+                    <img src="images/png/IMAGE4.png" alt="">
+                </article>
+            </section>
+
+            <!-- 4-th -->
+            <section>
+                <!-- heading -->
+                <article class="w-1/3 mx-auto text-center space-y-11 mt-40 mb-20">
+                    <h2>But that's not all</h2>
+                    <p>Ycode is packed full of other features that help you build data driven websites with no code.</p>
+                </article>
+
+                <!-- light table -->
+                <article class="light-table">
+                    <div>
+                        <h4>SEO</h4>
+                        <p>Auto-generate titles, descriptions and social share content from CMS fields.</p>
+                    </div>
+
+                    <div>
+                        <h4>Authentication</h4>
+                        <p>Create websites with user authentication, display content based on user types.</p>
+                    </div>
+
+                    <div>
+                        <h4>Hosting</h4>
+                        <p>Blazing fast published website performance optimized for better experience.</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 5 block -->
+            <section>5</section>
+
+            <!-- 6 block -->
+            <section>6</section>
+
+            <!-- 7 block -->
+            <section>7</section>
+        </main>
+    </div>
+</body>
+
+</html>

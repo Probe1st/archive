@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="images/png/el.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49eb51e36e.js" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="grid grid-cols-3 grid-rows-1">
+            <div></div>
+
+            <img class="w-[80%]" src="images/png/logo.png" alt="logo">
+
+            <div class="justify-self-end self-center font-thin underline text-gray-500">
+                <p>+7 (915) 283-24-17</p>
+                <p>versiya@list.ru</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col mt-5 items-center w-full p-5 border-y">
+            <nav class="w-[60%] flex flex-row justify-between font-semibold">
+                <a data-link="index">ГЛАВНАЯ</a>
+                <a data-link="portfolio">ПОРТФОЛИО</a>
+                <a data-link="prices">УСЛУГИ</a>
+                <a data-link="team">О БЮРО</a>
+                <a data-link="contacts">КОНТАКТЫ</a>
+                <a data-link="test">УЗНАТЬ СТОИМОСТЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cont">
+        <div id="testing" data-title="Опрос">
+            <form class="w-[760px] shadow-sm shadow-black mt-20">
+                <!-- header -->
+                <div class="flex flex-col bg-[#ececec]">
+                    <div class="flex flex-row justify-between p-10">
+                        <div class="flex flex-row align-middle">
+                            <img class="w-[1.5em]" src="images/svg/icons8-файл.svg" alt="">
+                            <p>Расчет стоимости дизайн-проекта</p>
+                        </div>
+
+                        <div>
+                            <p id="numPage">1/6</p>
+                        </div>
+                    </div>
+
+                    <!-- line -->
+                    <div class="bg-[#cbcbcb] w-full h-1">
+                        <div></div>
+                    </div>
+                </div>
+
+                <!-- страницы -->
+                <div class="px-10 pt-8">
+                    <fieldset id="1">
+                        <p class="text-xl">Дизайн интерьера какого объекта Вас интересует?</p>
+
+                        <div class="flex flex-row space-x-5 mt-8">
+                            <label>
+                                <input type="radio">
+    
+                                <div>
+                                    <img src="/images/bmp/flat.bmp" alt="">
+                                    <p>Квартира</p>
+                                </div>
+                            </label>
+
+                            <label>
+                                <input type="radio">
+    
+                                <div>
+                                    <img src="/images/bmp/home.bmp" alt="">
+                                    <p>Дом</p>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio">
+
+                                <div>
+                                    <img src="/images/bmp/place.bmp" alt="">
+                                    <p>Общественное<br>пространство</p>
+                                </div>
+                            </label>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset id="2"></fieldset>
+                    <fieldset id="3"></fieldset>
+                    <fieldset id="4"></fieldset>
+                    <fieldset id="5"></fieldset>
+                    <fieldset id="6"></fieldset>
+                    <fieldset id="7"></fieldset>
+                </div>
+
+                <!-- footer -->
+                <div class="flex flex-row justify-between px-10 py-12">
+                    <button class="button bg-[#e0e0e0]">← Назад</button>
+                    <button class="button bg-[#383838] text-white">Далее →</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex flex-col items-center bg-[#1c1c1c] w-full">
+            <div class="p-32">
+                <div class="grid grid-cols-2 gap-10">
+                    <!-- иконки -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <!-- ютуб -->
+                        <img src="images/svg/icon-youtube.svg" alt="">
+
+                        <!-- телеграм -->
+                        <img src="images/svg/icon-tg.svg" alt="">
+
+                        <!-- инстаграм -->
+                        <img src="images/svg/icon-inst.svg" alt="">
+
+                        <img src="images/svg/icon-fb.svg" alt="">
+                    </div>
+
+                    <div class="self-center  font-bold">
+                        <p>+7 (915) 283-24-17</p>
+                        <p>versiya@list.ru</p>
+                    </div>
+                </div>
+
+                <div class="mt-14">
+                    <p class="text-xl">Каширское ш., 3, корп. 2, стр. 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center p-3 items-center space-x-10 bg-[#525252] w-full">
+            <p class="text-[#000000] text-xl">Made on Tilda by Ekaterina Deynekina</p>
+            <div class="flex flex-row space-x-6 child:w-10">
+                <img src="images/svg/icon-behance-black.svg" alt="behance">
+                <img src="images/svg/icon-whatsapp-black.svg" alt="Whatsapp">
+                <img src="images/svg/icon-tg-black.svg" alt="Telegram">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

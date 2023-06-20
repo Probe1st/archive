@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="images/png/el.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="grid grid-cols-3 grid-rows-1">
+            <div></div>
+
+            <img class="w-[80%]" src="images/png/logo.png" alt="logo">
+
+            <div class="justify-self-end self-center font-thin underline text-gray-500">
+                <p>+7 (915) 283-24-17</p>
+                <p>versiya@list.ru</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col mt-5 items-center w-full p-5 border-y">
+            <nav class="w-[60%] flex flex-row justify-between font-semibold">
+                <a data-link="index">ГЛАВНАЯ</a>
+                <a data-link="portfolio">ПОРТФОЛИО</a>
+                <a data-link="prices">УСЛУГИ</a>
+                <a data-link="team">О БЮРО</a>
+                <a data-link="contacts">КОНТАКТЫ</a>
+                <a data-link="test">УЗНАТЬ СТОИМОСТЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cont">
+        <!-- контакты -->
+        <div id="contacts" data-title="Контакты">
+            <div class="flex flex-row mt-20">
+                <div class="w-7/12">
+                    <img class="w-full" src="images/jpg/photo (1).jpg" alt="">
+                </div>
+
+                <div class="w-5/12 p-20">
+                    <div>
+                        <h1 class="text-5xl font-thin">Наши контакты</h1>
+                        <p class="text-xl my-[1em]">Если вы хотите с нами связаться, заполните форму.</p>
+                    </div>
+
+                    <form name="form">
+                        <div>
+                            <label for="email">Электронная почта</label>
+                            <input placeholder="example@gmail.ru" type="email" name="email">
+                        </div>
+
+                        <div>
+                            <label for="name">Имя</label>
+                            <input placeholder="Ваше имя" type="text" name="name">
+                        </div>
+
+                        <div>
+                            <label for="telephone">Телефон</label>
+                            <input class="placeholder:text-gray-400" placeholder="+0 (000) 00-00" type="tel" name="number">
+                        </div>
+
+                        <div>
+                            <label for="message">Сообщение</label>
+                            <textarea type="text" name="message"></textarea>
+                        </div>
+                        
+                        <button class="button-lg border border-black" type="submit">Отправил</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex flex-col items-center bg-[#1c1c1c] w-full">
+            <div class="p-32">
+                <div class="grid grid-cols-2 gap-10">
+                    <!-- иконки -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <!-- ютуб -->
+                        <img src="images/svg/icon-youtube.svg" alt="">
+
+                        <!-- телеграм -->
+                        <img src="images/svg/icon-tg.svg" alt="">
+
+                        <!-- инстаграм -->
+                        <img src="images/svg/icon-inst.svg" alt="">
+
+                        <img src="images/svg/icon-fb.svg" alt="">
+                    </div>
+
+                    <div class="self-center  font-bold">
+                        <p>+7 (915) 283-24-17</p>
+                        <p>versiya@list.ru</p>
+                    </div>
+                </div>
+
+                <div class="mt-14">
+                    <p class="text-xl">Каширское ш., 3, корп. 2, стр. 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center p-3 items-center space-x-10 bg-[#525252] w-full">
+            <p class="text-[#000000] text-xl">Made on Tilda by Ekaterina Deynekina</p>
+            <div class="flex flex-row space-x-6 child:w-10">
+                <img src="images/svg/icon-behance-black.svg" alt="behance">
+                <img src="images/svg/icon-whatsapp-black.svg" alt="Whatsapp">
+                <img src="images/svg/icon-tg-black.svg" alt="Telegram">
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

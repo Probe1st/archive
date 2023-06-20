@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="images/png/el.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49eb51e36e.js" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="grid grid-cols-3 grid-rows-1">
+            <div></div>
+
+            <img class="w-[80%]" src="images/png/logo.png" alt="logo">
+
+            <div class="justify-self-end self-center font-thin underline text-gray-500">
+                <p>+7 (915) 283-24-17</p>
+                <p>versiya@list.ru</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col mt-5 items-center w-full p-5 border-y">
+            <nav class="w-[60%] flex flex-row justify-between font-semibold">
+                <a data-link="index">ГЛАВНАЯ</a>
+                <a data-link="portfolio">ПОРТФОЛИО</a>
+                <a data-link="prices">УСЛУГИ</a>
+                <a data-link="team">О БЮРО</a>
+                <a data-link="contacts">КОНТАКТЫ</a>
+                <a data-link="test">УЗНАТЬ СТОИМОСТЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cont">
+        <div id="testing" class="w-full flex flex-col items-center" data-title="Опрос">
+            <form class="w-7/12 shadow-sm shadow-black mt-20">
+                <!-- header -->
+                <div class="flex flex-col bg-[#ececec]">
+                    <div class="flex flex-row justify-between p-10">
+                        <div class="flex flex-row align-middle">
+                            <img class="w-[1.5em]" src="images/svg/icons8-файл.svg" alt="">
+                            <p>Расчет стоимости дизайн-проекта</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- страницы -->
+                <div class="pages">
+                    <div id="1" class="flex flex-col flex-wrap space-y-10">
+                        <!-- object -->
+                        <label>
+                            <h3>Дизайн интерьера какого объекта Вас интересует?</h3>
+
+                            <select name="object" required>
+                                <option value="flat">Квартира</option>
+                                <option value="home">Дом</option>
+                                <option value="Public Place">Общественное пространство</option>
+                            </select>
+                        </label>
+
+                        <!-- square -->
+                        <label>
+                            <h3>Какова общая площадь помещений для дизайна?</h3>
+
+                            <p></p>
+                            <input type="range" name="square" min="50" max="500" step="50" required>
+                        </label>
+
+                        <!-- type -->
+                        <label>
+                            <h3>Какой у Вас тип объекта?</h3>
+
+                            <select name="type" required>
+                                <option value="New building without repair">Новостройка без ремонта</option>
+                                <option value="flat">Квартира с отделкой</option>
+                                <option value="secondary">Вторичное жилье</option>
+                                <option value="commercialPremises">Комерческое помещение</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </label>
+
+                        <!-- style -->
+                        <label>
+                            <h3>В каком стиле Вы хотите сделать ремонт?</h3>
+
+                            <select name="style" required>
+                                <option value="minimalism">Минимализм</option>
+                                <option value="neoclassic">Неоклассика</option>
+                                <option value="scandinavian">Скандинавский</option>
+                                <option value="loft">Лофт</option>
+                                <option value="modern">Современный</option>
+                                <option value="idk">Я не разбираюсь в стилях</option>
+                            </select>
+                        </label>
+
+                        <!-- budget -->
+                        <label>
+                            <h3>На какой бюджет Вы ориентируетесь?</h3>
+
+                            <p></p>
+                            <input type="range" name="budget" min="100000" max="1000000" step="50000" required>
+                        </label>
+
+                        <!-- date -->
+                        <label>
+                            <h3>Когда Вы хотите начать дизайн-проект?</h3>
+
+                            <select name="date" required>
+                                <option value="soon">Чем раньше, тем лучше</option>
+                                <option value="week">В течение недели</option>
+                                <option value="month">В течение месяца</option>
+                                <option value="halfYears">В течение полугода</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div id="2" style="display: none;" class="flex flex-col flex-wrap space-y-10">
+                        <label>
+                            <h3>Ваше имя</h3>
+
+                            <input type="text" name="name" placeholder="Имя" required>
+                        </label>
+
+                        <label>
+                            <h3>Ваш телефон</h3>
+
+                            <input type="tel" name="number" placeholder="+7 (000) 000 00-00" required>
+                        </label>
+
+                        <label>
+                            <h3>Ваша электронная почта</h3>
+
+                            <input type="email" name="email" placeholder="your@email" required>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <div class="flex flex-row justify-between px-10 py-12">
+                    <button type="button" style="display: none;" class="button bg-[#cbcbcb]">Назад</button>
+                    <button type="button" class="button bg-[#cbcbcb]">Далее</button>
+                    <button type="submit" style="display: none;" class="button bg-[#383838] text-white">Узнать результат</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex flex-col items-center bg-[#1c1c1c] w-full">
+            <div class="py-10">
+                <div class="grid grid-cols-2 gap-10">
+                    <!-- иконки -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <!-- ютуб -->
+                        <img src="images/svg/icon-youtube.svg" alt="">
+
+                        <!-- телеграм -->
+                        <img src="images/svg/icon-tg.svg" alt="">
+
+                        <!-- инстаграм -->
+                        <img src="images/svg/icon-inst.svg" alt="">
+
+                        <img src="images/svg/icon-fb.svg" alt="">
+                    </div>
+
+                    <div class="self-center  font-bold">
+                        <a href="tel:89152832417">+7 (915) 283-24-17</a>
+                        <a href="mailto:versiya@list.ru">versiya@list.ru</a>
+                    </div>
+                </div>
+
+                <div class="mt-14">
+                    <p class="text-xl">Каширское ш., 3, корп. 2, стр. 4</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="index.js"></script>
+    <script src="export2.js"></script>
+    <script src="js/changerPage.js"></script>
+</body>
+
+</html>
