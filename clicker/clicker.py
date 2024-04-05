@@ -48,7 +48,7 @@ class ClickMouse(threading.Thread):
 			while self.running:
 				mouse.click(self.button)
 				time.sleep(self.delay)
-			time.sleep(0.1)
+			time.sleep(5)
 
 
 # instance of mouse controller is created
